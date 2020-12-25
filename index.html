@@ -12,7 +12,8 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link href="vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet">
+  
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -72,7 +73,7 @@
               <h4>Date</h4>
               <div class="row">
                   <div class="col-sm-12">
-                    <input type="text" class="form-control" id="input_date" >
+                    <input type="text" class="form-control datetimepicker" id="input_date" >
                   </div>
               </div>
               <!--  -->
@@ -364,6 +365,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
@@ -377,7 +379,10 @@
   <script >
     $(document).ready(function() {
       // var myElements = $("#tes").html("yuhuu");
-      $("#input_date").keyup(function(){
+      $("#input_date").change(function(){
+        // var month = {
+        //   ""
+        // }
           var val = $("#input_date").val();
           $("#date").html( val );
       });
@@ -527,6 +532,16 @@
           $("#report").html( val );
       });
     })
+
+    $(function () {
+        $('#input_date').datepicker({
+            todayBtn: "linked",
+            language: "it",
+            autoclose: true,
+            todayHighlight: true,
+            format: 'dd MM yyyy'
+        });
+    });
   </script>
 </body>
 
