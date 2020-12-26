@@ -27,7 +27,7 @@
 </head>
 <style>
   .mentahan {
-    background-image: url("bahan mentahan.jpg");
+    background-image: url("bahan_mentahan.jpg");
     background-repeat: cover;
     background-size: 100% 100%;
     
@@ -81,13 +81,13 @@
               <div class="row">
                   <label for="input_Password" class="col-sm-2 col-form-label">ARR</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="input_cancel_arr" >
+                    <input type="number" class="form-control" id="input_cancel_arr" >
                   </div>
               </div>
               <div class="row">
                   <label for="input_Password" class="col-sm-2 col-form-label">DEP</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="input_cancel_dep" >
+                    <input type="number" class="form-control" id="input_cancel_dep" >
                   </div>
               </div>
               <!--  -->
@@ -95,13 +95,13 @@
               <div class="row">
                   <label for="input_Password" class="col-sm-2 col-form-label">ARR</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="input_extra_arr" >
+                    <input type="number" class="form-control" id="input_extra_arr" >
                   </div>
               </div>
               <div class="row">
                   <label for="input_Password" class="col-sm-2 col-form-label">DEP</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="input_extra_dep" >
+                    <input type="number" class="form-control" id="input_extra_dep" >
                   </div>
               </div>
               <!--  -->
@@ -109,13 +109,13 @@
               <div class="row">
                   <label for="input_Password" class="col-sm-2 col-form-label">On Time</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="input_on_time" >
+                    <input type="number" class="form-control" id="input_on_time" >
                   </div>
               </div>
               <div class="row">
                   <label for="input_Password" class="col-sm-2 col-form-label">Delayed</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="input_delay" >
+                    <input type="number" class="form-control" id="input_delay" >
                   </div>
               </div>
               <!--  -->
@@ -136,7 +136,7 @@
                   </div>
                   <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="input_passenger_start" >
+                    <input type="number" class="form-control" id="input_passenger_start" >
                   </div>
               </div>
               <div class="row">
@@ -155,7 +155,7 @@
                   </div>
                   <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="input_passenger_end" >
+                    <input type="number" class="form-control" id="input_passenger_end" >
                   </div>
               </div>
               <!--  -->
@@ -176,7 +176,7 @@
                   </div>
                   <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="input_plane_start" >
+                    <input type="number" class="form-control" id="input_plane_start" >
                   </div>
               </div>
               <div class="row">
@@ -195,7 +195,7 @@
                   </div>
                   <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="input_plane_end" >
+                    <input type="number" class="form-control" id="input_plane_end" >
                   </div>
               </div>
               <!--  -->
@@ -216,7 +216,7 @@
                   </div>
                   <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="input_kargo_start" >
+                    <input type="number" class="form-control" id="input_kargo_start" >
                   </div>
               </div>
               <div class="row">
@@ -235,13 +235,13 @@
                   </div>
                   <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
                   <div class="col-sm-4">
-                    <input type="text" class="form-control" id="input_kargo_end" >
+                    <input type="number" class="form-control" id="input_kargo_end" >
                   </div>
               </div>
               <!--  -->
               <h4>Laporan Kejadian Khusus</h4>
               <div class="row">
-                  <label for="input_Password" class="col-sm-2 col-form-label">Jumlah</label>
+                  <label for="input_Password" class="col-sm-2 col-form-label">Laporan</label>
                   <div class="col-sm-10">
                     <input type="text" class="form-control" id="input_report" >
                   </div>
@@ -266,8 +266,8 @@
             <div style="position:absolute ; top:250px; width:100% " >
               <div class="row" >
                 <div class="col" style="text-align:center" >
-                  <div class="title" id="cancel_title"  >
-                    Cancel
+                  <div class="title"  >
+                    <img src="silang.png" width="30px" height="30px"  > <span id="cancel_title" >Cancel</span>  </img>
                   </div>
                   <div class="point" id="cancel_arr"  >
                     ARR : 0
@@ -294,7 +294,7 @@
               <div class="row" >
                 <div class="col" style="text-align:center" >
                   <div class="title" id="performance_title"  >
-                    On Time Performance
+                    <img src="jam3.png" width="30px" height="30px">On Time Performance </img>
                   </div>
                   <div class="point" id="on_time"  >
                     On Time : 0
@@ -310,7 +310,7 @@
               <div class="row" >
                 <div class="col" style="text-align:center" >
                   <div class="title" id="passenger_title" >
-                    Penumpang (+2,5%)
+                    <img src="penumpang.png" width="30px" height="30px"> Penumpang</img> (+2,5%)
                   </div>
                   <div class="point" id="passenger_start"  >
                     Tahun 2019 : 123
@@ -321,7 +321,7 @@
                 </div>
                 <div class="col" style="text-align:center" >
                   <div class="title" id="plane_title" >
-                    Pesawat (+13,6%)
+                    <img src="pesawat.png" width="30px" height="30px">Pesawat</img> (+13,6%)
                   </div>
                   <div class="point" id="plane_start" >
                     Tahun 2019 : 123
@@ -339,7 +339,7 @@
               <div class="row" >
                 <div class="col" style="text-align:center" >
                   <div class="title" id="kargo_title" >
-                    Kargo (Kg) (+135%) 
+                    <img src="barang.png" width="30px" height="30px">Kargo (Kg)</img>  (+135%) 
                   </div>
                   <div class="point" id="kargo_start" >
                     Tahun 2019 : 123
