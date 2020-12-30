@@ -525,9 +525,9 @@
         var year_start = $("#input_passenger_start").val();
         var year_end = $("#input_passenger_end").val();
         var max = Math.max(year_end, year_start);
-        var result =  Math.abs(year_end - year_start)/max * 100;
+        var result =  Math.abs((year_end / year_start)*(1/1)-1)*100;
         result = result.toFixed(2)
-        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"-" : "";
+        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"" : "";
         $("#passenger_title").html( "Penumpang ("+operator+result+" %) " );
       }
 
@@ -595,7 +595,7 @@
         var year_start = $("#input_kargo_start").val();
         var year_end = $("#input_kargo_end").val();
         var max = Math.max(year_end, year_start);
-        var result =  Math.abs(year_end / year_start)*(1/1)-1;
+        var result =  Math.abs((year_end / year_start)*(1/1)-1)*100;
         result = result.toFixed(2)
         var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"" : "";
         $("#kargo_title").html( "Kargo (Kg) ("+operator+result+" %) " );
