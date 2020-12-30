@@ -527,7 +527,7 @@
         var max = Math.max(year_end, year_start);
         var result =  Math.abs((year_end / year_start)*(1/1)-1)*100;
         result = result.toFixed(2)
-        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"" : "";
+        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"-" : "";
         $("#passenger_title").html( "Penumpang ("+operator+result+" %) " );
       }
 
@@ -562,7 +562,7 @@
         var max = Math.max(year_end, year_start);
         var result =  Math.abs((year_end / year_start)*(1/1)-1)*100;
         result = result.toFixed(2)
-        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"" : "";
+        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"-" : "";
         $("#plane_title").html( "Pesawat ("+operator+result+" %) " );
       }
 
@@ -597,7 +597,7 @@
         var max = Math.max(year_end, year_start);
         var result =  Math.abs((year_end / year_start)*(1/1)-1)*100;
         result = result.toFixed(2)
-        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"" : "";
+        var operator =  ( year_end - year_start > 0 )? "+" : ( year_end - year_start < 0 )?"-" : "";
         $("#kargo_title").html( "Kargo (Kg) ("+operator+result+" %) " );
       }
       
